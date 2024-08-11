@@ -138,7 +138,7 @@ func (l *Logger) filename() string {
 	// name := filepath.Base(os.Args[0]) + "-lumberjack.log"
 	// return filepath.Join(os.TempDir(), name)
 	str, _ := os.Getwd()
-	return name + str
+	return str+name 
 }
 
 // openNew主要是用来 将已经不用的日志文件存放然后创建一个新的日志文件
